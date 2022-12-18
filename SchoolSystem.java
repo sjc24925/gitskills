@@ -1,14 +1,14 @@
 package youer;
-import java.util.*;
+import java.util.*;//幼儿园入学管理系统
 interface ISignUp{
 	// 检查是否有 n对应的班级名额
     // 如果没有剩余名额，请返回 false ，否则学生将报名进入该班级并返回 true
 	public void addStudent(int n);
 }
 interface IParams{
-	public int getBig();
-	public int getMedium();
-	public int getSmall();
+	public int getBig();//大班
+	public int getMedium();//中班
+	public int getSmall();//小班
 	public void getPlanSignUp(int n);
 }
 public  class SchoolSystem implements ISignUp,IParams {
